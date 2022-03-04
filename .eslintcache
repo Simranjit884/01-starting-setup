@@ -17,8 +17,8 @@
     "hashOfConfig": "5"
   },
   {
-    "size": 492,
-    "mtime": 1646379948685,
+    "size": 372,
+    "mtime": 1646384342629,
     "results": "7",
     "hashOfConfig": "5"
   },
@@ -49,8 +49,7 @@
     "fatalErrorCount": 0,
     "warningCount": 0,
     "fixableErrorCount": 0,
-    "fixableWarningCount": 0,
-    "usedDeprecatedRules": "10"
+    "fixableWarningCount": 0
   },
   "F:\\Reactjs\\01-starting-setup\\src\\index.js",
   [],
