@@ -18,7 +18,22 @@ const ExpenseForm = () => {
   const DateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
   }
+  /*
+  Note- An alternative method of useState is to group the multiple single states into an object in useState() function.
+  E.g.
+  const [userInput, setUserInput] = useState({
+    enteredTitle: '',
+    enteredAmount: '',
+    enteredDate: ''
+  });
 
+  then to update the above combined object, setUserInput function will be used which gets the latest previous snapshot of state.
+   e.g.  setUserInput((prevState)=>{
+          return {...prevState, enteredTitle: event.target.value};
+   });
+   Above method should be used when the current state is dependent on the previous state. Here the prevState will always be
+   the updated and latest previous state.
+  */
   return (
     <form>
       <div className="new-expense__controls">
