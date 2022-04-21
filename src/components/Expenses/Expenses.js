@@ -4,12 +4,12 @@ import Card from '../UI/Card';
 import ExpenseFilter from "./ExpenseFilter";
 
 const Expenses = (props) => {
-    // const expenses = props.expenses;
+    const filteredYearHandler = (filteredYear) => {
+      console.log(filteredYear);
+    }
   return (
-    // <div>
-    
     <Card className="expenses">
-    <ExpenseFilter />
+    <ExpenseFilter filteredYear={filteredYearHandler}/>
       <ExpenseItem
         title={props.items[0].title}
         amount={props.items[0].amount}
