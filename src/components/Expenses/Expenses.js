@@ -20,7 +20,7 @@ const Expenses = (props) => {
           title={expenseItem.title}
           amount={expenseItem.amount}
           date={expenseItem.date}
-        ></ExpenseItem>
+        />
         )}
     </Card>
   );
