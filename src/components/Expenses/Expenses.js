@@ -15,13 +15,13 @@ const Expenses = (props) => {
         selected={selectedYear}
         onFilteredYear={filteredYearHandler}
       />
-      {props.items.map((expenseItem) => (
+      {props.items.map((expenseItem) => 
         <ExpenseItem
           title={expenseItem.title}
           amount={expenseItem.amount}
           date={expenseItem.date}
         ></ExpenseItem>
-      ))}
+        )}
     </Card>
   );
 };
