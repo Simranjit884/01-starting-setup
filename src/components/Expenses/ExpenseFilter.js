@@ -1,9 +1,9 @@
 import "./ExpenseFilter.css";
 
 const ExpenseFilter = (props) => {
-    const onChangeHandler = (inputYear) => {
-        props.onFilteredYear(inputYear.target.value);
-    }
+  const onChangeHandler = (inputYear) => {
+    props.onFilteredYear(inputYear.target.value);
+  };
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
