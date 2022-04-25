@@ -15,15 +15,21 @@ const NewExpense = (props) => {
   const [isClickedButton, setIsClickedButton] = useState(false);
 
   const isClicked = () => {
-      setIsClickedButton(prevState => !prevState);
-  }
+    setIsClickedButton((prevState) => !prevState);
+  };
 
   return (
     <div className="new-expense">
-      
-      {isClickedButton ? <ExpenseForm onSaveExpenseData={onSaveExpenseDataHandler} /> : <div>
-        <button onClick={isClicked}>Add new expense</button>
-      </div>}
+      {isClickedButton ? (
+        <ExpenseForm
+          isCanceled={isClicked}
+          onSaveExpenseData={onSaveExpenseDataHandler}
+        />
+      ) : (
+        <div>
+          <button onClick={isClicked}>Add new expense</button>
+        </div>
+      )}
     </div>
   );
 };
