@@ -7,10 +7,11 @@ const ChartBar = (props) => {
 
   if (props.max > 0) {
     barFillHeight = Math.round((props.value / props.maxValue) * 100) + "%";
+    console.log(barFillHeight+ ' gggg');
   }
   return (
     <div className="chart-bar">
-      <div className="chart-bar_inner">
+      <div className="chart-bar__inner">
         <div
           className="chart-bar__fill"
           style={{ height: barFillHeight }}
